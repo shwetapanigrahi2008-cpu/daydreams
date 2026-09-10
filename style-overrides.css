@@ -1,0 +1,6 @@
+/* Offline-friendly font fallbacks: no remote assets are required. */
+:root{
+  --serif: Georgia, 'Times New Roman', serif;
+  --sans: Inter, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --mono: 'Courier New', monospace;
+}

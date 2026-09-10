@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#efe3d0" /><title>Daydreams — Capture Your Perfect Day</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style-overrides.css" />
+</head>
+<body class="home-page">
+  <div class="grain"></div><div class="orb orb-one"></div><div class="orb orb-two"></div><div class="floating-stars" aria-hidden="true">✦　·　✧　·　✦</div>
+  <main class="shell fade-up">
+    <nav class="topbar"><a class="brand" href="index.html"><span class="brand-spark">✦</span> Daydreams</a><div class="nav-links"><a class="active" href="index.html">Today</a><a href="photobooth.html">Photobooth</a><a href="archive.html">Archive <span class="archive-count"></span></a></div><button class="sound-toggle" aria-label="Toggle ambient sound" title="Toggle ambient sound">◌ <span>ambient</span></button></nav>
+    <section class="hero"><p class="eyebrow">A little ritual for the beautiful ordinary</p><h1>How did today<br><em>feel?</em></h1><p class="hero-copy">Gather the fleeting things — a song, a feeling, a small, perfect scene — before they drift away.</p></section>
+    <section class="journal-card" aria-label="Today's diary entry">
+      <div class="journal-head"><div><p class="eyebrow">Today’s memory</p><p class="date-line" id="todayDate"></p></div><span class="sun-icon">☼</span></div>
+      <div class="divider"></div>
+      <fieldset class="mood-section"><legend>What color was your day?</legend><div class="moods" id="moodOptions"><button type="button" data-mood="radiant" data-emoji="☀️"><span>☀️</span> radiant</button><button type="button" data-mood="soft" data-emoji="☁️"><span>☁️</span> soft</button><button type="button" data-mood="dreamy" data-emoji="☾"><span>☾</span> dreamy</button><button type="button" data-mood="tender" data-emoji="♡"><span>♡</span> tender</button><button type="button" data-mood="wild" data-emoji="✿"><span>✿</span> wild</button></div></fieldset>
+      <label class="field-label" for="song">The soundtrack of this moment</label><div class="song-field"><span>♫</span><input id="song" maxlength="100" placeholder="A song, an artist, a little chorus…" /></div>
+      <label class="field-label" for="diary">Dear future me,</label><textarea id="diary" maxlength="1200" placeholder="Today felt like..."></textarea><div class="entry-foot"><span id="wordCount">0 / 1200</span><button class="capture-btn" id="captureEntry"><span>✦</span> Capture this moment</button></div>
+    </section>
+    <aside class="photo-prompt"><div class="prompt-icon">▣</div><div><p class="eyebrow">Make it visible</p><h2>One picture tells the rest of the story.</h2></div><a href="photobooth.html">Enter photobooth <span>→</span></a></aside>
+    <p class="footer-note">MADE OF SMALL, GOLDEN THINGS <span>✦</span> YOUR PERFECT DAY</p>
+  </main><div class="toast" id="toast" role="status"></div><script src="script.js"></script>
+</body></html>
